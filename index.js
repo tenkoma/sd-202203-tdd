@@ -1,5 +1,5 @@
 function fizzBuzz(num) {
-  return '1';
+  return num.toString();
 }
 
 module.exports = fizzBuzz;
