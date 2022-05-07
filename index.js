@@ -1,12 +1,7 @@
 function fizzBuzz(num) {
-  const canDivideByThree = num % 3 === 0;
-  const canDivideByFive = num % 5 === 0;
-  if (canDivideByThree && canDivideByFive) {
-    return 'FizzBuzz';
-  } else if (canDivideByThree) {
-    return 'Fizz';
-  } else if (canDivideByFive) {
-    return 'Buzz';
+  const fizzbuzz = (num % 3 === 0 ? 'Fizz' : '') + (num % 5 === 0 ? 'Buzz' : '');
+  if (fizzbuzz !== '') {
+    return fizzbuzz;
   }
   return num.toString();
 }
