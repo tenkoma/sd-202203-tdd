@@ -23,3 +23,9 @@ describe('3と5両方の倍数を渡すと「FizzBuzz」を返す', () => {
     expect(fizzBuzz(15)).toBe('FizzBuzz');
   });
 });
+
+describe('整数以外を渡すとTypeErrorをスローする', () => {
+  test("nullを渡すとTypeErrorをスローする", () => {
+    expect(() => fizzBuzz(null)).toThrow(Error);
+  });
+});
